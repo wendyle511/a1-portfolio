@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Wendy (Tram) Le</title>
+  <meta name="description" content="Portfolio of Wendy (Tram) Le, Software Engineering student at UC Irvine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;family=Nunito:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav aria-label="Main">
+      <a class="brand" href="index.html">Wendy Le</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section aria-labelledby="proj-h">
+      <h1 id="proj-h">Projects</h1>
+      <p>Three course and side projects, each with a link to its source code.</p>
+      <ul class="projects">
+        <li class="project">
+          <h2>Messenger App</h2>
+          <ul class="tags"><li>Python</li><li>Flask</li><li>Tkinter</li></ul>
+          <ul class="details">
+            <li>Built a real-time messaging application with a Tkinter GUI and a Flask and socket-based server, supporting multi-user direct messaging over a persistent client-server connection.</li>
+            <li>Implemented message handling, a custom communication protocol, and profile management using threading, JSON serialization, and network sockets for concurrent users and reliable delivery across sessions.</li>
+          </ul>
+          <a class="button" href="https://github.com/wendyle511/Direct-Messaging-Chat"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>View on GitHub</a>
+        </li>
+        <li class="project">
+          <h2>RideApp</h2>
+          <ul class="tags"><li>Java</li><li>Swing</li></ul>
+          <ul class="details">
+            <li>Built a ride request management system with a Swing GUI where users submit pickup and dropoff locations, passenger count, and express options, and see a live ride queue.</li>
+            <li>Implemented ride creation, validation, pricing, and driver assignment using object-oriented design, event-driven programming, and ArrayList data structures.</li>
+          </ul>
+          <a class="button" href="https://github.com/wendyle511/RideApp"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>View on GitHub</a>
+        </li>
+        <li class="project">
+          <h2>Mini Game Engine</h2>
+          <ul class="tags"><li>C++</li></ul>
+          <ul class="details">
+            <li>Built a turn-based combat game engine using multiple inheritance and virtual functions to model battles between Players and NPCs, with a custom doubly linked list for turn order.</li>
+            <li>Designed a full class hierarchy with polymorphism, friend-class access control, and virtual inheritance to solve the diamond problem. Added damage scaling, speed-based turns, and rage-state NPCs across 10+ combat rounds.</li>
+          </ul>
+          <a class="button" href="https://github.com/wendyle511/Mini-Game-Engine"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Wendy (Tram) Le &middot; <a href="https://www.linkedin.com/in/wendy-le-37b010413">LinkedIn</a> &middot; <a href="https://github.com/wendyle511">GitHub</a></p>
+  </footer>
+</body>
+</html>
