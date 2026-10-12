@@ -1,24 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
--->
-
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | Wendy (Tram) Le</title>
+  <meta name="description" content="Portfolio of Wendy (Tram) Le, Software Engineering student at UC Irvine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;family=Nunito:wght@400;700&amp;display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <nav aria-label="Main">
+      <a class="brand" href="index.html">Wendy Le</a>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="name">
+      <img src="images/wendy.jpeg" alt="Portrait photo of Wendy Le" width="220" height="220">
+      <div>
+        <h1 id="name">Wendy (Tram) Le</h1>
+        <p class="role">Software Engineer Intern</p>
+        <p class="lead">I'm a software engineering student at UC Irvine. I like building apps and making them easy to use.</p>
+        <a class="button" href="projects.html">View projects</a>
+        <a class="button outline" href="contact.html"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm2 2v.5l8 5.500 8-5.500V7H4zm16 3.900-8 5.500-8-5.500V17h16v-6.100z"/></svg>Contact me</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="edu-h">
+      <h2 id="edu-h">Education</h2>
+      <article class="edu">
+        <h3>University of California, Irvine</h3>
+        <p>Bachelor of Science in Software Engineering &ndash; Irvine, CA<br>Expected graduation: June 2028</p>
+        <p><strong>Relevant coursework:</strong> Data Structure Implementation and Analysis, Computer Organization, Requirements Analysis and Engineering, Software Testing, Analysis, and Quality Assurance, Human Computer Interaction, Information Retrieval, Designing for the Internet of Things, Project Management.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="skills-h">
+      <h2 id="skills-h">Skills</h2>
+      <div class="table-wrap">
+        <table>
+          <caption>Skills grouped by category</caption>
+          <thead>
+            <tr><th scope="col" id="h-cat">Category</th><th scope="col" id="h-skills">Skills</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row" id="r-prog" headers="h-cat">Programming</th><td headers="r-prog h-skills">Python, Java, C, C++, SQL, Assembly, Object-Oriented Programming, Data Structures, Software Design &amp; Development, Debugging, Unit Testing, Code Review, Database Design, Information Systems</td></tr>
+            <tr><th scope="row" id="r-proj" headers="h-cat">Project</th><td headers="r-proj h-skills">Requirements Analysis, Project Management, Stakeholder Communication, Business Analysis, Data Analysis &amp; Visualization, Statistics &amp; Probability, UX/UI Design (HCI, Interaction Design, Prototyping, User Research, Usability Testing)</td></tr>
+            <tr><th scope="row" id="r-tools" headers="h-cat">Tools</th><td headers="r-tools h-skills">GitHub, VS Code, PyCharm, Eclipse, JUnit, Xcode, Canva, Figma, Microsoft Office, Google Platforms</td></tr>
+            <tr><th scope="row" id="r-lang" headers="h-cat">Languages</th><td headers="r-lang h-skills">English, Vietnamese</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Wendy (Tram) Le &middot; <a href="https://www.linkedin.com/in/wendy-le-37b010413">LinkedIn</a> &middot; <a href="https://github.com/wendyle511">GitHub</a></p>
+  </footer>
 </body>
 </html>
